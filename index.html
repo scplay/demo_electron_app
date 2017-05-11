@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      html,body {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        text-align: center;
+      }
+      #holder {
+        box-sizing: border-box;
+        display: block;
+        width: 80%;
+        text-align: center;
+        font-size: 2rem;
+        margin: auto;
+        border: 2px dashed teal;
+        padding: 1rem;
+      }
+      #holder img {
+        max-width: 500px;
+        max-height: 500px;
+        margin: auto;
+      }
+      footer {
+        width: 100%;
+        position: fixed;
+        display: block;
+        bottom: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>This is electron</h1>
+        
+    </div>
+    <div id="holder">
+      <div>Drag your image here</div>
+      <img src="" alt="">
+    </div>
+    <footer>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </footer>
+    <script>
+      require('./render.js');
+    </script>
+  </body>
+
+</html>
